@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <style>
+      body {
+        background-image: url("https://cdn.pixabay.com/photo/2017/08/09/09/50/shopping-2613984_640.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .regForm {
+        margin: auto;
+        background: whitesmoke;
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="password"],
+      input[type="email"],
+      input[type="number"] {
+        display: inline-block;
+        padding: 3px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .submit {
+        background-color: blue;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        float: left; /* Align to the left */
+        width: auto; /* Fit content */
+        box-sizing: border-box;
+      }
+      .login {
+        background-color: green;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        float: left; /* Align to the left */
+        margin-left: 10px; /* Add spacing between buttons */
+        width: auto; /* Fit content */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h2
+      style="text-align: center; padding: 15px; background-color: rgba(240, 248, 255, 0.574);"
+    >
+      Please complete the registration.
+    </h2>
+
+    <div class="regForm">
+      <form id="signupForm" action="dashboard.html" method="POST">
+        <label for="name">Name:</label>
+        <input style="margin-top: 5px; margin-bottom: 5px" type="text" id="name" placeholder="Name" />
+        <label for="DOB">Date of Birth:</label>
+        <input style="margin-top: 5px; margin-bottom: 5px" type="date" id="DOB" />
+        <label for="gender">Gender:</label>
+        <input style="margin-top: 5px; margin-bottom: 5px" type="radio" name="gender" value="Male" />Male
+        <input style="margin-top: 5px; margin-bottom: 5px" type="radio" name="gender" value="Female" />Female
+        <input style="margin-top: 5px; margin-bottom: 5px" type="radio" name="gender" value="Other" />Other
+        <input style="margin-top: 5px; margin-bottom: 5px" type="radio" name="gender" value="Prefer not to say" />Prefer not to say
+        <br />
+        <label for="phone">Phone Number:</label>
+        <input id="phone" style="margin-top: 5px; margin-bottom: 5px" placeholder="Mobile Number" type="number" /><br />
+        <label for="email">Email:</label>
+        <input id="email" style="margin-top: 5px; margin-bottom: 5px" placeholder="e-mail@gmail.com" type="email" />
+        <label for="password">Password:</label>
+        <input id="password" style="margin-bottom: 5px" placeholder="Password" type="password" />
+        <label for="religion">Religion:</label>
+        <input id="religion" style="margin-top: 5px; margin-bottom: 5px" placeholder="Religion" type="text" />
+        <label for="nationality">Nationality:</label>
+        <input id="nationality" style="margin-top: 5px; margin-bottom: 5px" placeholder="Nationality" type="text" />
+        <label for="Job">Job:</label>
+        <input id="Job" style="margin-top: 5px; margin-bottom: 5px" placeholder="Job" type="text" />
+        <label for="address">Address:</label>
+        <input id="address" style="margin-top: 5px" placeholder="Country" type="text" />
+        <input id="city" placeholder="City" type="text" />
+        <input id="area" placeholder="Area" type="text" />
+        <button type="submit" class="submit">Sign Up</button>
+      </form>
+      <!-- Login Button -->
+      <button class="login" onclick="location.href='login.html'">Login</button>
+    </div>
+  </body>
+</html>

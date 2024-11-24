@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in and Sign Up</title>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        background-image: url("login_pic.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+
+      .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .auth-buttons .login-btn,
+      .auth-buttons .signup-btn {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+      }
+
+      .auth-buttons .login-btn {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+        background-color: white;
+        color: #4caf50;
+        border: 2px solid #4caf50;
+      }
+
+      .auth-buttons .signup-btn {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+        background-color: white;
+        color: #4caf50;
+        border: 2px solid #4caf50;
+      }
+
+      .auth-buttons .signup-btn:hover {
+        background-color: #4caf50;
+        color: white;
+        border: 2px solid white;
+      }
+      .auth-buttons .login-btn:hover {
+        background-color: #4caf50;
+        color: white;
+        border: 2px solid white;
+      }
+      
+      .welcome {
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      .welcome h2 {
+        font-size: 36px;
+        color: #4caf50;
+      }
+
+      .welcome p {
+        font-size: 18px;
+        color: #555;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="welcome">
+      <h2>Welcome to Our Online Grocery Shop</h2>
+      <p>Your desired & fresh groceries delivered straight to your door!</p>
+
+      
+      <div class="auth-buttons">
+        <button class="login-btn">
+          <a href="login.html">Log In</a>
+        </button>
+        <button class="signup-btn">
+          <a href="registration.html">Sign Up</a>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
